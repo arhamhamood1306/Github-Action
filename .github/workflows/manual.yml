@@ -7,6 +7,7 @@ name: Manual workflow
 on:
   workflow_dispatch:
     # Inputs the workflow accepts.
+    
     inputs:
       name:
         # Friendly description to be shown in the UI instead of 'name'
@@ -17,6 +18,15 @@ on:
         required: true
         # The data type of the input
         type: string
+      age:
+       type: text
+       options:
+         - "20"
+         - "21"
+         - "22"
+       required: true
+       default: "22"
+
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
