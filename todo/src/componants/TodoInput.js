@@ -26,7 +26,7 @@ function TodoInput({ todos, setTodos }) {
         onChange={(event) => {
           return setTodo(event.target.value);
         }}
-        placeholder="Enter your todo.."
+        placeholder="Enter your todo here.."
       />
 
       <button onClick={handleClick}>
